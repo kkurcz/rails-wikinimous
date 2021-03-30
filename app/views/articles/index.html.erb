@@ -1,0 +1,5 @@
+<div class="articles-card">
+    <% @articles.each_with_index do |article, i| %>
+      <h3><%= link_to "#{i+1}. #{article.title}", article_path(article) %></h3>
+    <% end %>
+</div>
